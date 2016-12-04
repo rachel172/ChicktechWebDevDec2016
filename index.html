@@ -1,0 +1,72 @@
+<head style "background-color:#FFECB3">
+    <style type="text/css">
+        body {
+            background-color: #00BFFF;
+            font-size: large;
+            align-items:center;
+            display:flex;
+            flex-direction:column;
+        }
+        
+        section {
+            max-width: 50ch;
+            background-color: #fffe81;
+        }
+        h2{
+            margin:0px;
+        }
+    </style>
+    <script src="js/mailer.js" type="text/javascript"></script>
+</head>
+
+<body style="font-family:Comic Sans SM">
+    <div>
+    <header>
+        <h1 style="font-SIZE:large;"> About me</h1>
+    </header>
+    <p>My name is rachel i am very exited.</p>
+    <p>This is how my day went.......
+    First i got to chicktech, then .....</p>
+    <h1>chapter 2</h1>
+
+    <section>
+        <h2>Bio</h2>
+        I go to bssj.
+        I am on a basketball team.
+        I have a cat and a dog.
+        Last but not least,I live in my moms house.
+    </section>
+
+    <section>
+        <header>
+            <h2> FAVORITES</h2>
+        </header>
+        <P>Here are two of my favorite books......</P>
+        <section>
+            <header>
+                <ul>
+                    <li> To kill a mocking bird.</li>
+                    <li> Push.</li>
+                </ul>
+            </header>
+        </section>
+
+    </section>
+
+    <section>
+        <header>
+            <h2>Dislikes</h2>
+        </header>
+        <p>Here are some of my least favorites things.</p>
+        <section>
+            <header>
+                <h3>Foods</h3>
+            </header>
+            
+            <textarea style="width:100%" id="message"></textarea>
+            <button onclick="mailer.send(document.getElementById('message').value);"> send</button>
+           
+        </section>
+    </section>
+    </div>
+</body>
